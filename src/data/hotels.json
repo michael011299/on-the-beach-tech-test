@@ -1,0 +1,37 @@
+{
+  "hotels": [
+    {
+      "hotelName": "Iberostar Grand Salome",
+      "location": "Costa Adeje. Tenerife",
+      "star rating": 5,
+      "departureDate": "3rd July 2019",
+      "holidayDuration": 7,
+      "departureLocation": "East Midlands",
+      "price": 1136.5,
+      "hotelDescription": "The Iberostar Grand Salome has an exceptional location in the south of Tenerife, overlooking the Atlantic Ocean. It is situated between the Golf del Sur and the Amarillo Golf courses, and is an ideal hotel for families, couples and groups who are looking for a holiday full of sport, sun and sea. ",
+      "hotelImage": "src/assets/hotel-image-1.png"
+    },
+    {
+      "hotelName": "Aquamarina Golf Hotel",
+      "location": "Costa Adeje. Tenerife",
+      "star rating": 4,
+      "departureDate": "27th May 2019",
+      "holidayDuration": 7,
+      "departureLocation": "Manchester",
+      "price": 696.8,
+      "hotelDescription": "The Aquamarina Golf Hotel has an exceptional location in the south of Tenerife, overlooking the Atlantic Ocean. It is situated between the Golf del Sur and the Amarillo Golf courses, and is an ideal hotel for families, couples and groups who are looking for a holiday full of sport, sun and sea. ",
+      "hotelImage": "src/assets/hotel-image-2.png"
+    },
+    {
+      "hotelName": "Las Piramides Resort",
+      "location": "Costa Adeje. Tenerife",
+      "star rating": 3,
+      "departureDate": "3rd July 2019",
+      "holidayDuration": 7,
+      "departureLocation": "Liverpool",
+      "price": 499.99,
+      "hotelDescription": "The Las Piramides Resort has an exceptional location in the south of Tenerife, overlooking the Atlantic Ocean. It is situated between the Golf del Sur and the Amarillo Golf courses, and is an ideal hotel for families, couples and groups who are looking for a holiday full of sport, sun and sea. ",
+      "hotelImage": "src/assets/hotel-image-3.png"
+    }
+  ]
+}
