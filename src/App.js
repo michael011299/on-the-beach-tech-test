@@ -1,13 +1,14 @@
 import "./App.css";
+import { Sorting } from "./components/Sorting/Sorting";
+import { Listings } from "./components/Listings/Listings";
 
-function App() {
+const App = () => {
   return (
     <div className='App'>
-      <header className='App-header'>
-        <h1>Hello world</h1>
-      </header>
+      <Sorting />
+      <Listings />
     </div>
   );
-}
+};
 
 export default App;
