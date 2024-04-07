@@ -2,10 +2,7 @@
   grid-column: 2;
   background-color: white;
   width: 95%;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 2%;
-  padding: 1%;
   border-radius: 2px;
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -17,6 +14,7 @@
 
 .trip_details {
   grid-column: 2;
+  padding-left: 3%;
 }
 
 .hotel_name {
@@ -34,12 +32,7 @@
   text-align: center;
   border-radius: 5px;
 }
-
-.trip_price {
-  font-size: 20px;
-}
-
-.trip_image-more-info {
-  background-color: white;
-  border: none;
+.trip_image-image {
+  height: 100%;
+  width: 100%;
 }
