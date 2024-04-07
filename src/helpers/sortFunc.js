@@ -1,18 +1,17 @@
-export const sortFunc = (data, sortingValue) => {
+export const sortFunc = (hotelData, sortingValue) => {
   // sort by name
-
   if (sortingValue === "hotelName") {
-    data.sort((a, b) => {
-      const nameA = a.hotelName.toUpperCase();
-      const nameB = b.hotelName.toUpperCase();
-      if (nameA < nameB) {
+    hotelData.sort((a, b) => {
+      const hotelNameA = a.hotelName.toUpperCase();
+      const hotelNameB = b.hotelName.toUpperCase();
+      if (hotelNameA < hotelNameB) {
         return -1;
       }
-      if (nameA > nameB) {
+      if (hotelNameA > hotelNameB) {
         return 1;
       }
       return 0;
     });
   }
-  return data;
+  return hotelData;
 };
