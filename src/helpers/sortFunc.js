@@ -12,6 +12,10 @@ export const sortFunc = (hotelData, sortingValue) => {
       }
       return 0;
     });
+  } else if (sortingValue === "starRating") {
+    // star rating
+    hotelData.sort((a, b) => b.starRating - a.starRating);
   }
+
   return hotelData;
 };
