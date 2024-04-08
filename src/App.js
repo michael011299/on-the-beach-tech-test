@@ -1,12 +1,24 @@
 import "./App.css";
 import { Sorting } from "./components/Sorting/Sorting";
-import { Listings } from "./components/Listings/Listings";
+import { HolidayCard } from "./components/Listings/HolidayCard";
+import hotels from "./data/hotels.json";
+import { useEffect, useState } from "react";
+import { sortFunc } from "./helpers/sortFunc";
 
 const App = () => {
+  const trips = hotels.hotels;
+  const [packageHolidays, setPackageHolidays] = useState(trips);
+  const [holdiaySort, setHolidaySort] = useState();
+
+  const handleChange = (newSortBy) => {
+    setHolidaySort(newSortBy);
+    setPackageHolidays(sortFunc(trips, newSortBy));
+  };
+
   return (
     <div className='App'>
-      <Sorting />
-      <Listings />
+      <Sorting handleChange={handleChange} />
+      <HolidayCard packageHolidays={packageHolidays} />
     </div>
   );
 };
