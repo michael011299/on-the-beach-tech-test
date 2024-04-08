@@ -2,7 +2,7 @@ import "./App.css";
 import { Sorting } from "./components/Sorting/Sorting";
 import { HolidayCard } from "./components/Listings/HolidayCard";
 import hotels from "./data/hotels.json";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { sortFunc } from "./helpers/sortFunc";
 
 const App = () => {

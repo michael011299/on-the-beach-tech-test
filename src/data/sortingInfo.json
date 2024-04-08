@@ -1,0 +1,7 @@
+{
+  "sortingInfo": [
+    { "sortValue": "hotelName", "label": "alphabetically", "icon": "fa-arrow-up-a-z" },
+    { "sortValue": "price", "label": "price", "icon": "fa-sterling-sign" },
+    { "sortValue": "starRating", "label": "star rating", "icon": "fa-star" }
+  ]
+}
