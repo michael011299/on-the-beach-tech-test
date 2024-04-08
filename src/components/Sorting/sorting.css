@@ -1,7 +1,6 @@
 .sorting {
   grid-column: 1;
   text-align: center;
-  margin-top: 6%;
 }
 
 .sorting__sort-button {
@@ -9,7 +8,7 @@
   border: none;
   background-color: whitesmoke;
   width: 70%;
-  height: 15%;
+  height: 60px;
   margin: 1px;
   color: navy;
 }
