@@ -9,10 +9,9 @@ export const Sorting = ({ handleChange }) => {
     <div className='sorting'>
       {sortingData.map((sortMethod, i) => {
         return (
-          <button className='sort-button' onClick={() => handleChange(sortMethod.sortValue)} key={i}>
+          <button className='sorting__sort-button' onClick={() => handleChange(sortMethod.sortValue)} key={i}>
             sort <strong>{sortMethod.label}</strong>
             <i
-              id='sort-icons'
               className={`fa-solid ${sortMethod.icon}`}
               style={{ float: "right", fontSize: "large", marginRight: "5%", color: "#c7c7c7" }}
             ></i>

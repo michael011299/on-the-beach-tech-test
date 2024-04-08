@@ -4,7 +4,7 @@
   margin-top: 6%;
 }
 
-.sort-button {
+.sorting__sort-button {
   text-align: left;
   border: none;
   background-color: whitesmoke;
@@ -14,7 +14,7 @@
   color: navy;
 }
 
-.sort-button:hover {
+.sorting__sort-button:hover {
   background-color: navy;
   color: whitesmoke;
 }
