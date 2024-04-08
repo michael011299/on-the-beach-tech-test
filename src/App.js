@@ -15,8 +15,6 @@ const App = () => {
     setPackageHolidays(sortFunc(trips, newSortBy));
   };
 
-  useEffect(() => {}, [holdiaySort]);
-
   return (
     <div className='App'>
       <Sorting handleChange={handleChange} />
