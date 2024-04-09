@@ -4,7 +4,9 @@ import Rating from "@mui/material/Rating";
 export const HolidayDetails = ({ holidayData }) => {
   return (
     <div className='card-details'>
-      <p className='card-details__title'>{holidayData.hotelName}</p>
+      <p data-testid='card-title' className='card-details__title'>
+        {holidayData.hotelName}
+      </p>
       <p>{holidayData.location}</p>
       <Rating name='read-only' value={holidayData.starRating} readOnly />
       <br />
