@@ -1,20 +1,19 @@
 .sorting {
   grid-column: 1;
   text-align: center;
-  margin-top: 6%;
 }
 
-.sort-button {
+.sorting__sort-button {
   text-align: left;
   border: none;
   background-color: whitesmoke;
   width: 70%;
-  height: 15%;
+  height: 60px;
   margin: 1px;
   color: navy;
 }
 
-.sort-button:hover {
+.sorting__sort-button:hover {
   background-color: navy;
   color: whitesmoke;
 }

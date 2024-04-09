@@ -1,38 +1,68 @@
-.trip_card {
+.card {
   grid-column: 2;
-  background-color: white;
-  width: 95%;
-  margin-top: 2%;
-  border-radius: 2px;
-  display: grid;
-  grid-template-columns: 3fr 2fr;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 2%;
+  width: 90%;
+}
+p {
+  color: gray;
 }
 
-.trip_image {
-  grid-column: 1;
-}
-
-.trip_details {
-  grid-column: 2;
-  padding-left: 3%;
-}
-
-.hotel_name {
+h4 {
   color: navy;
-  font-size: 24px;
-  font-weight: 400;
 }
 
-.hotel_button {
+.card-image {
+  width: 60%;
+  height: 100%;
+}
+
+.card-details {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.card-details__title {
+  font-size: x-large;
+  color: navy;
+}
+
+.card-details__buy-button {
+  text-align: center;
+  background-color: gold;
   color: navy;
   font-weight: bold;
+  font-size: 20px;
+  width: 80%;
+  margin-left: 10%;
+  height: 80px;
   border: none;
-  background-color: gold;
-  width: 90%;
-  text-align: center;
-  border-radius: 5px;
+  border-radius: 6px;
 }
-.trip_image-image {
-  height: 100%;
-  width: 100%;
+
+.expand-btn {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 8px 16px;
+  color: navy;
+  border: none;
+  cursor: pointer;
+}
+
+.expanded {
+  margin-bottom: 150px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-top: none;
+  padding-left: 10px;
 }
