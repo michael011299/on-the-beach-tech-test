@@ -1,0 +1,19 @@
+.sorting {
+  grid-column: 1;
+  text-align: center;
+}
+
+.sorting__sort-button {
+  text-align: left;
+  border: none;
+  background-color: whitesmoke;
+  width: 70%;
+  height: 60px;
+  margin: 1px;
+  color: navy;
+}
+
+.sorting__sort-button--active {
+  background-color: navy;
+  color: whitesmoke;
+}
