@@ -13,7 +13,7 @@
   color: navy;
 }
 
-.sorting__sort-button:hover {
+.sorting__sort-button--active {
   background-color: navy;
   color: whitesmoke;
 }
