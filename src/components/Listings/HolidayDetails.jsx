@@ -1,38 +1,39 @@
 import React from "react";
 import Rating from "@mui/material/Rating";
 
-export const HolidayDetails = ({ data }) => {
+export const HolidayDetails = ({ holidayData }) => {
   return (
     <div className='card-details'>
-      <p className='card-details__title'>{data.hotelName}</p>
-      <p>{data.location}</p>
-      <Rating name='read-only' value={data.starRating} readOnly />
+      <p className='card-details__title'>{holidayData.hotelName}</p>
+      <p>{holidayData.location}</p>
+      <Rating name='read-only' value={holidayData.starRating} readOnly />
       <br />
       <p style={{ display: "inline" }}>
-        <strong>{data.numOfPeople.adults} </strong> adults,{" "}
-        {data.numOfPeople.children > 0 ? (
+        <strong>{holidayData.numOfPeople.adults} </strong> adults,{" "}
+        {holidayData.numOfPeople.children > 0 ? (
           <span>
-            <strong>{data.numOfPeople.children} </strong> {data.numOfPeople.children > 1 ? "children" : "child"}{" "}
+            <strong>{holidayData.numOfPeople.children} </strong>{" "}
+            {holidayData.numOfPeople.children > 1 ? "children" : "child"}{" "}
           </span>
         ) : (
           ""
         )}
-        {data.numOfPeople.infants > 0 ? (
+        {holidayData.numOfPeople.infants > 0 ? (
           <span>
-            <strong>{data.numOfPeople.infants} </strong> infant(s)
+            <strong>{holidayData.numOfPeople.infants} </strong> infant(s)
           </span>
         ) : (
           ""
         )}
       </p>
       <p>
-        <strong>{data.departureDate}</strong> for <strong>{data.holidayDuration} days</strong>
+        <strong>{holidayData.departureDate}</strong> for <strong>{holidayData.holidayDuration} days</strong>
       </p>
       <p>
-        departing from <strong>{data.departureLocation}</strong>
+        departing from <strong>{holidayData.departureLocation}</strong>
       </p>
       <button className='card-details__buy-button'>
-        Book now <br /> £{data.price}
+        Book now <br /> £{holidayData.price}
       </button>
     </div>
   );

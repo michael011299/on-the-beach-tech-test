@@ -1,7 +1,7 @@
 import "./App.css";
 import { Sorting } from "./components/Sorting/Sorting";
-import { HolidayCard } from "./components/Listings/HolidayCard";
 import hotels from "./data/hotels.json";
+import { Holiday } from "./components/Listings/Holiday";
 import { useState } from "react";
 import { sortFunc } from "./helpers/sortFunc";
 
@@ -18,7 +18,7 @@ const App = () => {
   return (
     <div className='App'>
       <Sorting handleChange={handleChange} />
-      <HolidayCard packageHolidays={packageHolidays} />
+      <Holiday packageHolidays={packageHolidays} />
     </div>
   );
 };
